@@ -1,0 +1,517 @@
+@font-face {
+
+    font-family: Abdo-Master;
+
+    src: url(../fonts/alfont_com_AlFont_com_Abdo-Master-Regular.otf);
+}
+
+@font-face {
+
+    font-family: Abdo-Master-bold;
+
+    src: url(../fonts/fonnts.com-Abdo_Master-Bold.ttf);
+}
+
+:root {
+    --primary-color: #AD976E;
+
+    --secondary-color: #2C3444;
+
+    --font-family-Regular: 'Abdo-Master';
+    --font-family-bold: 'Abdo-Master-bold';
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+:target {
+    scroll-margin-top: 10em;
+}
+
+body {
+    background: var(--secondary-color);
+    /* استخدام خط عربي، يمكنك اختيار أي خط عربي تفضله */
+    direction: rtl;
+    /* جعل الاتجاه من اليمين إلى اليسار */
+    text-align: right;
+    /* محاذاة النص إلى اليمين */
+}
+
+::-webkit-scrollbar {
+    width: 13px;
+    background: var(--secondary-color);
+
+}
+
+::-webkit-scrollbar-track {
+    border-radius: 15px;
+    box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--primary-color);
+    border-radius: 15px;
+}
+
+
+.container {
+    width: 90% !important
+}
+
+.header {
+    background: var(--secondary-color);
+    position: sticky;
+    top: 0;
+    z-index: 10000000;
+}
+
+/* nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100;
+} */
+
+.logo {
+    width: 90px;
+    height: 91px;
+    gap: 0px;
+    opacity: 0px;
+
+}
+
+.navbar {
+    border: none;
+}
+
+.navbar-nav {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.nav-item {
+    font-family: var(--font-family-bold);
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 44.4px;
+
+    color: var(--primary-color);
+
+}
+
+.navbar-toggler span {
+    font-size: 30px;
+    font-weight: 600;
+
+    color: var(--primary-color);
+}
+
+a.nav-link {
+    font-family: var(--font-family-bold);
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 44.4px;
+
+    color: var(--primary-color);
+    position: relative;
+    transition: 0.5s;
+    color: var(--primary-color);
+}
+
+.nav-link:hover {
+    font-family: var(--font-family-bold);
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 44.4px;
+    color: var(--primary-color);
+    position: relative;
+    transition: 0.5s;
+
+}
+
+
+.nav-link::after {
+    content: "";
+    width: 0px;
+    margin-top: 15px;
+    height: 3px;
+    background-color: var(--primary-color);
+    position: absolute;
+    left: 10px;
+    top: 80%;
+}
+
+.nav-link:hover::after {
+    width: 80%;
+    transition: 0.5s;
+}
+
+.navbar-toggler-icon {
+    color: var(--primary-color);
+}
+
+h2 {
+    color: var(--primary-color);
+    text-align: center;
+    font-family: var(--font-family-bold);
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+p {
+    color: var(--primary-color);
+    text-align: center;
+    font-family: var(--font-family-Regular);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+
+.right_contact_us {
+    background: #FDFBF0;
+
+    border-radius: 15px 0px 0px 15px;
+
+}
+
+
+.left_contact_us {
+    background: #FDFBF0;
+    height: 100vh;
+    border-radius: 0px 15px 15px 0px;
+}
+
+label {
+    color: var(--secondary-color);
+    text-align: right;
+    font-family: var(--font-family-Regular);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.form-control {
+    border-radius: 20px;
+    border: 2px solid #9C9C9C !important;
+    background: #FFF;
+    height: 56px;
+    align-self: stretch;
+}
+
+#validationCustom03 {
+    border-radius: 20px;
+    border: 2px solid #9C9C9C !important;
+    background: #FFF;
+    height: 56px;
+    align-self: stretch;
+}
+
+button {
+
+    padding: 12px 150px 12px 150px;
+    align-items: center;
+    border: none;
+    border-radius: 20px;
+    background: var(--primary-color);
+    color: var(--secondary-color);
+    font-family: var(--font-family-Regular);
+    font-size: 20px;
+
+}
+
+button:hover {
+    background: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+button {
+
+    text-decoration: none;
+    color: var(--secondary-color);
+    border: none;
+    background: var(--primary-color);
+
+
+}
+
+
+button:hover {
+
+    text-decoration: none;
+    color: var(--primary-color);
+    background: var(--secondary-color);
+    transition: 0ms;
+    border: none;
+
+
+}
+
+
+.right_contact_us h5 {
+    color: var(--primary-color);
+
+    text-align: center;
+    font-family: var(--font-family-bold);
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.h51 {
+
+    padding-top: 110px;
+
+}
+
+.h52 {
+
+    margin-top: 20vh;
+
+}
+
+.h5 {
+    color: var(--primary-color);
+    font-family: var(--font-family-bold);
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 25px;
+
+
+}
+
+.right_contact_us {
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.col-4 div {
+    border-radius: 50%;
+    background: var(--primary-color);
+    width: 70px;
+    height: 70px;
+    align-items: center;
+    line-height: 60px;
+    justify-content: center;
+    margin: auto;
+}
+
+.col-4 div:hover {
+    border-radius: 50%;
+    background: #FDFBF0;
+    width: 70px;
+    height: 70px;
+    align-items: center;
+    line-height: 60px;
+    transition: 0.5s;
+    justify-content: center;
+
+}
+
+
+
+
+.phone-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* Background color for the number container */
+    padding: 18px 108px;
+    /* Padding to match the layout in the image */
+
+    /* Rounded corners */
+    border-radius: 20px;
+    background: var(--primary-color);
+}
+
+.phone-number {
+    font-size: 24px;
+    /* Font size to make the number prominent */
+    font-weight: bold;
+    /* Bold font */
+    color: #FDFBF0;
+    /* White text color */
+    text-decoration: none;
+    /* Remove underline from the link */
+    border-radius: 20px;
+    /* background: var(--primary-color); */
+}
+
+.phone-number:hover {
+    font-size: 24px;
+    /* Font size to make the number prominent */
+    font-weight: bold;
+    /* Bold font */
+    color: var(--primary-color);
+    ;
+    /* White text color */
+    text-decoration: none;
+    /* Remove underline from the link */
+    border-radius: 20px;
+    /* background: #FDFBF0; */
+}
+
+.phone-container:hover {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* Background color for the number container */
+    padding: 18px 108px;
+    /* Padding to match the layout in the image */
+
+    /* Rounded corners */
+    border-radius: 20px;
+    background: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+
+@media (max-width: 767px) {
+
+    .col-4 div {
+        border-radius: 50%;
+        background: var(--primary-color);
+        width: 50px;
+        height: 50px;
+        align-items: center;
+        line-height: 43px;
+        justify-content: center;
+    }
+
+    .col-4 div svg {
+
+        width: 30px;
+        height: 30px;
+
+    }
+
+    .col-4 div:hover {
+        border-radius: 50%;
+        background: #FDFBF0;
+        width: 50px;
+        height: 50px;
+        align-items: center;
+        line-height: 43px;
+        transition: 0.5s;
+        justify-content: center;
+
+    }
+
+    .right_contact_us h5 {
+        text-align: center;
+        font-family: var(--font-family-bold);
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    .right_contact_us {
+        border-radius: 15px;
+        margin-bottom: 20px;
+        height: 80vh;
+    }
+
+    .left_contact_us {
+        border-radius: 15px;
+        margin-bottom: 20px;
+
+    }
+
+    .h51 {
+
+        margin-top: 70px;
+
+    }
+
+
+    .bg {
+        border-radius: 20px;
+        background: var(--primary-color);
+        padding: 10px;
+        /* width: 100% */
+    }
+
+
+    .bg a {
+        color: #FDFBF0;
+        font-family: var(--font-family-bold);
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        border-radius: 20px;
+        background: var(--primary-color);
+
+    }
+
+    .abutton {
+
+        padding: 12px;
+        align-items: center;
+        border: none;
+        border-radius: 20px;
+        background: var(--primary-color);
+        color: var(--secondary-color);
+        font-family: var(--font-family-Regular);
+        font-size: 20px;
+
+    }
+
+    .h52 {
+
+        margin-top: 10vh;
+
+    }
+
+    .phone-number {
+        font-size: 20px;
+        /* Font size to make the number prominent */
+        font-weight: bold;
+        /* Bold font */
+        color: #FDFBF0;
+        /* White text color */
+        text-decoration: none;
+        /* Remove underline from the link */
+        border-radius: 20px;
+        /* background: var(--primary-color); */
+    }
+
+    .phone-number:hover {
+        font-size: 20px;
+        /* Font size to make the number prominent */
+        font-weight: bold;
+        /* Bold font */
+        color: var(--primary-color);
+        ;
+        /* White text color */
+        text-decoration: none;
+        /* Remove underline from the link */
+        border-radius: 20px;
+        /* background: #FDFBF0; */
+    }
+
+}
+
+@media (min-width: 1400px) {
+    .right_contact_us {
+        height: 100vh;
+        align-items: center;
+        justify-content: center;
+
+    }
+}
